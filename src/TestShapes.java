@@ -41,6 +41,12 @@ public class TestShapes {
          Circle has the largest area as 50.24
          */
 
+        Rectangle rectangle = new Rectangle();
+        rectangle.getWidth();
+        rectangle.getHeight();
+        Square square = new Square();
+        Circle circle = new Circle();
+
 
     }
 }
