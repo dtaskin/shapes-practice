@@ -41,12 +41,12 @@ public class Circle implements Shape{
 
     @Override
     public double area() {
-        return pi * getRadius() * getRadius();
+        return pi * radius * radius;
     }
 
     @Override
     public double perimeter() {
-        return 2 * pi * getRadius();
+        return 2 * pi * radius;
     }
 
     //Override toString() method here

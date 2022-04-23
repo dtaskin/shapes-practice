@@ -38,19 +38,19 @@ public class Rectangle implements Shape{
     }
 
     /*
-    Override area and perimeter methods here
-    REMEMBER:
-    Area of a rectangle can be found as => width * height
-    Perimeter of a rectangle can be found as => 2 * (width + height)
-    */
+        Override area and perimeter methods here
+        REMEMBER:
+        Area of a rectangle can be found as => width * height
+        Perimeter of a rectangle can be found as => 2 * (width + height)
+        */
     @Override
     public double area() {
-        return getWidth() * getHeight();
+        return width * height;
     }
 
     @Override
     public double perimeter() {
-        return 2 * (getWidth() + getHeight());
+        return 2 * (width + height);
     }
 
 

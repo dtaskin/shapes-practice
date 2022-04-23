@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -42,10 +43,37 @@ public class TestShapes {
          */
 
         Rectangle rectangle = new Rectangle();
-        rectangle.getWidth();
-        rectangle.getHeight();
+        rectangle.setWidth(5.5);
+        rectangle.setHeight(6);
+
         Square square = new Square();
+        square.setSide(2.5);
+
         Circle circle = new Circle();
+        circle.setRadius(4);
+
+        List<Shape> listOfShapes = new ArrayList<>();
+        listOfShapes.add(circle);
+        listOfShapes.add(square);
+        listOfShapes.add(rectangle);
+
+        for (Shape shape : listOfShapes) {
+            System.out.println(shape);
+            System.out.println("Area of the " + shape.getClass().getSimpleName() + " is = " + shape.area());
+            System.out.println("perimeter of the " + shape.getClass().getSimpleName() + " is = " + shape.perimeter());
+            System.out.println();
+
+        }
+
+        double max = 0;
+        Shape largestArea = null;
+        for (Shape shape : listOfShapes) {
+            if(shape.area() > max){
+                max = shape.area();
+                largestArea = shape;
+            }
+        }
+        System.out.println(largestArea.getClass().getSimpleName() + " has the largest are as " + max);
 
 
     }

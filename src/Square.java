@@ -32,12 +32,12 @@ public class Square implements Shape{
         */
     @Override
     public double area() {
-        return getSide() * getSide();
+        return side * side;
     }
 
     @Override
     public double perimeter() {
-        return 4 * getSide();
+        return 4 * side;
     }
 
     //Override toString() method here
